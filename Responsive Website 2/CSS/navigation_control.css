@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* CSS Document defining the design and positioning for the navigation menu of my website. */
+
+@media screen and (min-width : 280px) {
+	
+	#navigation_bar {
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100vw;
+		
+	}
+	
+	.linkContainer {
+		
+		padding: 0;
+		width: 5%;
+		
+	}
+	
+	.navLogoSize {
+		
+		width: auto;
+		
+	}
+	
+}
+
+@media screen and (min-width: 768px) {
+	
+	.linkContainer {
+		
+		width: 3%;
+		
+	}
+	
+}
+
+@media screen and (min-width: 1200px) {
+	
+	.navLogoSize {
+		
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		
+		
+	}
+	
+	.linkContainer {
+	
+		border-radius: 100%;
+		width: 3%;
+		padding: 10px;
+		transition: 0.5s ease;
+		transform: translateY(0px);
+	
+	}
+
+	.linkContainer:hover {
+	
+		transform: translateY(-10px);
+		background-color: #2a91eb;
+		box-shadow: 0 15px 1px -1px #1376cd inset;
+		padding: 10px;
+	
+	}
+	
+}

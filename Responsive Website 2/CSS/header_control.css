@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* CSS Document defining the design and positioning for the header of my website. */
+
+/* Header Design */
+
+header {
+
+	font-family: 'Bungee', cursive;
+
+}
+
+/* Header Positioning */
+
+/* Mobile Phones / Small Tablets */
+
+@media screen and (min-width : 280px) {
+	
+	header {
+		
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	#tt1 {
+		
+		font-size: 14vw;
+		line-height: 100%;
+		
+	}
+	
+	#tt2 {
+		
+		font-size: 8vw;
+		line-height: 100%;
+		
+	}
+	
+	#Subtitle {
+		
+		margin-top: 1vh;
+		
+	}
+	
+	#updateText {
+		
+		font-size: 4vw;
+		text-align: center;
+		margin-top: 2vh;
+		
+	}
+	
+}
+
+@media screen and (min-width: 768px) {
+
+	#tt1 {
+		
+		font-size: 8vw;
+		
+	}
+	
+	#tt2 {
+		
+		font-size: 4.5vw;
+		
+	}
+	
+	#updateText {
+		
+		font-size: 1.5vw;
+		
+	}
+	
+}
+
+@media screen and (min-width: 1200px) {
+
+	#tt1 {
+		
+		font-size: 4vw;
+		
+	}
+	
+	#tt2 {
+		
+		font-size: 2.25vw;
+		
+	}
+	
+	#updateText {
+		
+		font-size: 1.25vw;
+		
+	}
+	
+}

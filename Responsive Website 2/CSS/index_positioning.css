@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* Index Page - Element Positioning */
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+	
+	#tt1 {
+		
+		font-size: 7vw;
+		
+	}
+	
+	#tt2 {
+		
+		font-size: 4vw;
+		
+	}
+	
+	#Subtitle {
+		
+		margin-top: 1vh;
+		
+	}
+	
+	#updateText {
+		
+		font-size: 2vw;
+		
+	}
+	
+	.linkContainer {
+		
+		width: 2.5%;
+		
+	}
+	
+}
+
+

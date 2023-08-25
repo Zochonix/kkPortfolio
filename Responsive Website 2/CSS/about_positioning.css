@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+/* About Page - Element Positioning */
+
+/* Mobile Phones / Small Tablets */
+
+@media screen and (min-width : 280px) {
+	
+	html, body {
+		
+		height: 110%;
+		
+	}
+
+	main {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 90%;
+		 	
+	}
+	
+	#aboutText {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+		
+	}
+	
+	.bodyText {
+		
+		font-size: 100%;
+		margin-bottom: 1vh;
+		width: 90%;
+		
+	}
+	
+	#bodyIntroduction, #bodyEnd {
+		
+		font-size: 6vw;
+		text-align: center;
+		margin-bottom: 2vh;
+		margin-top: 1vh;
+		
+	}
+	
+	#bodyEnd {
+		
+		font-size: 100%;
+		
+	}
+	
+	#mediaIcons_container {
+		
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	.mediaIcons_link {
+		
+		padding: 0;
+		width: 7.5%;
+		
+	}
+	
+	#githubIconLink {
+		
+		margin-right: 2.5vw;
+		
+	}
+	
+	#twitterIconLink {
+		
+		margin-left: 2.5vw;
+		
+	}
+	
+	.mediaIcons_images {
+		
+		width: auto;
+		
+	}
+	
+	#picture {
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		
+	}
+	
+	#myself {
+		
+		width: 50%;
+		height: 80%;
+		object-fit: cover;
+		object-position: 100% 0;
+		margin-bottom: 2vh;
+		
+	}
+	
+}
+
+/* Tablets / Small Laptops */
+
+@media screen and (min-width: 768px) {
+	
+	html, body {
+		
+		height: 100%;
+		
+	}
+	
+	main {
+		
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 60%;
+		height: auto;
+		
+	}
+	
+	#aboutText {
+		
+		position: relative;
+		left: 1.5vw;
+		width: 100%;
+		
+	}
+	
+	.bodyText {
+		
+		font-size: 100%;
+		margin-bottom: 1vh;
+		
+	}
+	
+	#bodyIntroduction, #bodyEnd {
+		
+		font-size: 3vw;
+		width: 100%;
+		
+	}
+	
+	#bodyEnd {
+		
+		font-size: 125%;
+		
+	}
+	
+	#mediaIcons_container {
+		
+		margin-bottom: 2.5%;
+		
+	}
+	
+	.mediaIcons_link {
+		
+		padding: 0;
+		width: 7.5%;
+		
+	}
+	
+	#githubIconLink {
+		
+		margin-right: 2.5%;
+		
+	}
+	
+	#twitterIconLink {
+		
+		margin-left: 2.5%;
+		
+	}
+	
+	.mediaIcons_images {
+		
+		width: auto;
+		
+	}
+	
+	#myself {
+		
+		width: 50%;
+		height: 80%;
+		margin: 0;
+		
+	}
+	
+}
+
+/* Laptops / Desktop */
+
+@media screen and (min-width: 1200px) {
+	
+	main {
+		
+		width: 50%;
+		
+	}
+	
+	.bodyText {
+		
+		font-size: 120%;
+		
+	}
+	
+	#bodyIntroduction, #bodyEnd {
+		
+		font-size: 1.5vw;
+		width: 72.5%;
+		
+	}
+	
+	#bodyEnd {
+		
+		font-size: 100%;
+		
+	}
+	
+	.mediaIcons_link {
+		
+		width: 5%;
+		transition: 0.3s;
+		
+	}
+	
+	.mediaIcons_link:hover {
+		
+		transform: translateY(-5px);
+		
+	}
+	
+	#myself {
+		
+		width: 40%;
+		
+	}
+	
+}
+
+/* 4K */
+
+@media screen and (min-width: 2560px) {
+	
+	.bodyText {
+		
+		font-size: 175%;
+		
+	}
+	
+	#bodyIntroduction, #bodyEnd {
+		
+		font-size: 1.5vw;
+		width: 80%;
+		
+	}
+	
+	#bodyEnd {
+		
+		font-size: 150%;
+		
+	}
+	
+	#myself {
+		
+		width: 30%;
+		
+	}
+	
+}
+
+/* Mobile Phones in Landscape Mode */
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+
+	html, body {
+
+		height: 180%;
+
+	}
+
+	#aboutText {
+
+		width: 100%;
+
+	}
+
+	.bodyText {
+
+		font-size: 90%;
+		margin-bottom: 5vh;
+		margin-left: 1vw;
+		width: 80%;
+
+	}
+
+	#bodyIntroduction, #bodyEnd {
+
+		font-size: 3vw;
+		text-align: center;
+		margin-bottom: 5vh;
+		margin-top: 5vh;
+
+	}
+
+	#bodyEnd {
+
+		font-size: 90%;
+
+	}
+	
+	.mediaIcons_link {
+		
+		width: 5%;
+		
+	}
+
+	#myself {
+
+		width: 25%;	
+
+	}
+
+}

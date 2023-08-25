@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+
+	<!-- This file contains the HTML code for the Blog page of my website. -->
+	
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"> <!-- For RWD -->
+	<title>Kane Kennedy - Blog</title> <!-- The title of the website -->
+	
+	<!-- Fonts -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&family=VT323&display=swap" rel="stylesheet">
+	
+	<!-- Below are the CSS files that my website will use. -->
+	
+	<link rel = "stylesheet" href = "CSS/base.css">
+	<link rel = "stylesheet" href = "CSS/theme.css">
+	<link rel = "stylesheet" href = "CSS/header_control.css">
+	<link rel = "stylesheet" href = "CSS/navigation_control.css">
+	<link rel = "stylesheet" href = "CSS/blog_positioning.css">
+	<link rel = "stylesheet" href = "CSS/dropdown_control.css">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	
+</head>
+
+<body>
+	
+	<canvas id = "background_canvas"></canvas>
+	
+	<section id = "bg">
+		
+		<header class = "animate__animated animate__bounceIn animate__fast">
+		
+			<h1 class = "colourPrimary" id = "tt1">Kane</h1>
+			<h1 class = "colourSecondary" id = "tt2">Kennedy</h1>
+			
+		</header>
+		
+		<main>
+		
+			<article class = "content curved" id = "currentEntry">
+			
+				<h2 id = "entryTitle">Potential Blog Entry</h2>
+				
+				<p class = "entryText" id = "start">Guten morgen.</p>
+				<p class = "entryText">Buenos dias.</p>
+				<p class = "entryText" id = "end">Good morning.</p>
+			
+			</article>
+			
+			<section class = "curved" id = "previousEntries">
+			
+				<h2 id = "subtitle">Previous Entries</h2>
+				
+				<p>To download a previous entry, simply select an entry from the dropbox and the download process will begin.</p>
+				
+				<section id = "entrySelector">
+					
+					<button class = "curved" id = "dropbtn">Download Previous Entry</button>
+					
+					<section id = "dropdownList" class = "dropdown-content curved">
+						
+						<a id = "Entry1" class = "dropdownItems" href="#">No Entries Yet!</a>
+					
+					</section>
+				
+				</section>
+			
+			</section>
+			
+		</main>
+		
+		<section id = "navigation_bar">
+				
+			<a class = "linkContainer" href = "index.html"><img class = "navLogoSize" id = "home" alt = "" src = "Images/homeLogo.svg"></a>
+			<a class = "linkContainer" href = "about.html"><img class = "navLogoSize" id = "about" alt = "" src = "Images/aboutLogo.svg"></a>
+			<a class = "linkContainer" href = "projects.html"><img class = "navLogoSize" id = "projects" alt = "" src = "Images/codeLogo.svg"></a>
+			<a class = "linkContainer" href = "blog.html"><img class = "navLogoSize" id = "blog" alt = "" src = "Images/blogLogo.svg"></a>
+			
+		</section>
+		
+	</section>
+	
+	<!-- JS Scripts -->
+	
+	<script src = "JavaScript/dropdown_controller.js"></script>
+	
+</body>
+</html>

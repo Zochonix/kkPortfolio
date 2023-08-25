@@ -1,0 +1,645 @@
+@charset "utf-8";
+
+/* Projects Page - Element Positioning */
+
+/* Modal Positioning Defaults (All Devices) */
+
+#projectModal {
+
+	position: fixed; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+  	left: 0;
+  	top: 0;
+  	width: 100%; /* Full width */
+  	height: 100%; /* Full height */
+
+}
+
+#modalContainer {
+	
+	position: absolute;
+	top: 10%;
+	left: 12.5%;
+	margin: auto;
+	width: 75%;
+	height: 80%;
+	overflow-y: scroll;
+	
+}
+
+#modalContent {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+/* Mobile Phones / Small Tablets */
+
+@media screen and (min-width : 280px) {
+	
+	html, body {
+		
+		height: 100%;
+		
+	}
+
+	#content {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 90%;
+		 	
+	} 	
+	
+	#tutorialContainer {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+		
+	}
+	
+	.tutorialText {
+		
+		font-size: 100%;
+		margin-bottom: 1vh;
+		width: 90%;
+		
+	}
+	
+	#tutorialIntroduction, #tutorialEnd {
+		
+		font-size: 6vw;
+		text-align: center;
+		margin-bottom: 2vh;
+		margin-top: 1vh;
+		
+	}
+	
+	#tutorialEnd {
+		
+		font-size: 100%;
+		
+	}
+	
+	.projectMenu {
+  		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		
+	}
+	
+	#dropbtn, #dropdownList {
+		
+		width: 50%;
+		margin-bottom: 2vh;
+		
+	}
+	
+	#keyDetails {
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		margin-top: 1vh;
+		
+	}
+	
+	#projectTitle {
+		
+		text-align: center;
+		font-size: 200%;
+		
+	}
+	
+	#mainModalContent {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		
+	}
+	
+	#technicalDetails {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 2vh;
+		font-size: 90%;
+		text-align: center;
+		
+	}
+	
+	.techDetails {
+		
+		margin-bottom: 2.5vh;
+		
+	}
+	
+	#picture_container {
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 95%;
+		
+	}
+	
+	#picture_container > img {
+		
+		width: 100%;
+		
+	}
+	
+	.dots {
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 2.5vh;
+		margin-bottom: 2.5vh;
+		
+	}
+	
+	.dot {
+		
+		height: 3vw;
+  		width: 3vw;
+		margin-right: 1vw;
+		margin-left: 1vw;
+		
+	}
+	
+	#conclusion {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		
+	}
+	
+	#conclusion > p, #exitButton {
+		
+		margin-bottom: 2vh;
+		
+	}
+	
+	#creationQuestion, #storyQuestion {
+		
+		font-size: 110%;
+		
+	}
+	
+	#creationAnswer, #storyAnswer {
+		
+		width: 90%;
+		font-size: 100%;
+		
+	}
+	
+	#exitButton, #downloadButton {
+		
+		width: 50%;
+		height: 5vh;
+		margin-top: 2vh;
+		
+	}
+	
+}
+
+/* Tablets / Small Laptops */
+
+@media screen and (min-width: 768px) {
+	
+	html, body {
+		
+		height: 100%;
+		
+	}
+	
+	#content {
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 60%;
+		height: 33%;
+		
+	}
+	
+	#tutorialContainer {
+		
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		left: 1.5vw;
+		
+	}
+	
+	.tutorialText {
+		
+		font-size: 100%;
+		margin-bottom: 1vh;
+		
+	}
+	
+	#tutorialIntroduction, #tutorialEnd {
+		
+		font-size: 3vw;
+		margin-bottom: 2vh;
+		margin-top: 1vh;
+		width: 100%;
+		
+	}
+	
+	#tutorialEnd {
+		
+		font-size: 110%;
+		
+	}
+	
+	.projectMenu {
+  		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		
+	}
+	
+	#dropbtn, #dropdownList {
+		
+		width: 40%;
+		margin-bottom: 0;
+		
+	}
+	
+	#dropbtn {
+		
+		margin-bottom: 1vh;
+		
+	}
+	
+	#modalContainer {
+	
+		width: 75%;
+		height: 80%;
+		left: 12.5%;
+	
+	}
+	
+	#keyDetails {
+		
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 0.5vh;
+		margin-bottom: 2vh;
+		width: 95%;
+		
+	}
+	
+	#projectTitle {
+		
+		font-size: 400%;
+		
+	}
+	
+	#mainModalContent {
+		
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 95%;
+		margin-bottom: 2vh;
+		
+	}
+	
+	#technicalDetails {
+		
+		align-self: flex-start;
+		width: 100%;
+		margin-top: 0;
+		font-size: 180%;
+		
+	}
+	
+	.techDetails {
+		
+		margin-bottom: 1vh;
+		width: 100%;
+		text-align: left;
+		
+	}
+	
+	#technicalDetailsTitle {
+		
+		margin-bottom: 2.5vh;
+		
+	}
+	
+	#picture_container {
+		
+		width: 100%;
+		align-self: center;
+		
+	}
+	
+	#picture_container > img {
+		
+		width: 250%;
+		
+	}
+	
+	.dots {
+		
+		margin-top: 1vh;
+		margin-bottom: 0;
+		
+	}
+	
+	.dot {
+		
+		height: 1.5vw;
+  		width: 1.5vw;
+		
+	}
+	
+	#creationQuestion, #storyQuestion {
+		
+		font-size: 220%;
+		text-align: left;
+		width: 90%;
+		
+	}
+	
+	#creationAnswer, #storyAnswer {
+		
+		font-size: 200%;
+		
+	}
+	
+	#exitButton, #downloadButton {
+		
+		width: 66%;
+		align-self: flex-start;
+		margin-left: 3.5vw;
+		font-size: 240%;
+		
+	}
+	
+	#exitButton {
+		
+		margin-top: 1vh;
+		
+	}
+	
+}
+
+/* Laptops / Desktop */
+
+@media screen and (min-width: 1200px) {
+	
+	#content {
+		
+		width: 50%;
+		height: 33%;
+		
+	}
+	
+	.tutorialText {
+		
+		font-size: 100%;
+		
+	}
+	
+	#tutorialIntroduction, #tutorialEnd {
+		
+		font-size: 2vw;
+		margin-bottom: 2vh;
+		margin-top: 1vh;
+		width: 100%;
+		
+	}
+	
+	#tutorialEnd {
+		
+		font-size: 125%;
+		
+	}
+	
+	.projectMenu {
+  		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		
+	}
+	
+	#dropbtn, #dropdownList {
+		
+		width: 40%;
+		
+	}
+	
+	#modalContainer {
+	
+		width: 90%;
+		height: 80%;
+		left: 5%;
+	
+	}
+	
+	#keyDetails {
+		
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 1.25vh;
+		margin-bottom: 2vh;
+		width: 95%;
+		
+	}
+	
+	#projectTitle {
+		
+		font-size: 500%;
+		
+	}
+	
+	#mainModalContent {
+		
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 95%; 	
+		
+	}
+	
+	#technicalDetails {
+		
+		font-size: 360%;
+		
+	}
+	
+	.techDetails {
+		
+		margin-bottom: 1vh;
+		width: 100%;
+		text-align: left;
+		
+	}
+	
+	#technicalDetailsTitle {
+		
+		font-size: 100%;
+		margin-bottom: 2.5vh;
+		
+	}
+	
+	#picture_container {
+		
+		width: 100%;
+		
+	}
+	
+	.dots {
+		
+		margin-top: 2.5vh;
+		margin-bottom: 5vh;
+		
+	}
+	
+	.dot {
+		
+		height: 1vw;
+  		width: 1vw;
+		margin-right: 0.5vw;
+		margin-left: 0.5vw;
+		
+	}
+	
+	#creationQuestion, #storyQuestion {
+		
+		font-size: 440%;
+		text-align: left;
+		width: 90%;
+		
+	}
+	
+	#creationAnswer, #storyAnswer {
+		
+		font-size: 300%;
+		
+	}
+	
+	#exitButton, #downloadButton {
+		
+		width: 33%;
+		align-self: flex-start;
+		margin-left: 3.5vw;
+		font-size: 240%;
+		
+	}
+	
+	#exitButton {
+		
+		margin-top: 1vh;
+		
+	}
+	
+}
+
+/* 4K */
+
+@media screen and (min-width: 2560px) {
+	
+	#aboutText {
+		
+		justify-content: space-evenly;
+		align-items: center;
+		width: 50%;
+		
+	}
+	
+	.tutorialText {
+		
+		font-size: 200%;
+		
+	}
+	
+	#tutorialIntroduction, #tutorialEnd {
+		
+		font-size: 300%;
+		margin-bottom: 2vh;
+		margin-top: 1vh;
+		width: 80%;
+		
+	}
+	
+	#tutorialEnd {
+		
+		font-size: 200%;
+		
+	}
+	
+	#myself {
+		
+		width: 20%;
+		height: 60%;
+		
+	}
+	
+}
+
+/* Mobile Phones in Landscape Mode */
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+
+	html, body {
+
+		height: 180%;
+
+	}
+	
+	#dropdownList {
+		
+		height: 25vh;
+		
+	}
+	
+	#tutorialContainer > p {
+		
+		margin-bottom: 5vh;
+		
+	}
+	
+}

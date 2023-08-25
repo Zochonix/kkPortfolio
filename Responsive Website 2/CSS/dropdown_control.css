@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* CSS Document defining the design and positioning for the dropdown menus of my website. */
+
+/* Dropdown Menu Design */
+
+#dropbtn {
+	
+	background-color: #3498DB;
+  	padding: 2vw;
+ 	font-size: 125%;
+  	border: none;
+  	cursor: pointer;
+	transition: 0.3s;
+	
+}
+
+@media screen and (min-width: 768px) {
+	
+	#dropbtn {
+		
+		padding: 0.5vw;
+		
+	}
+	
+}
+
+#dropbtn:hover, #dropbtn:focus {
+	
+  	background-color: #2a91eb;
+	
+}
+
+.dropdown-content {
+	
+	display: none;
+	overflow: auto;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	font-family: 'VT323', monospace;
+	
+}
+
+.dropdown-content .dropdownItems {
+	
+	color: black;
+	text-align: center;
+	width: 100%;
+	padding: 1vw;
+	text-decoration: none;
+	display: block;
+	
+}
+
+.dropdownItems {
+	
+	transition: 0.3s;
+	
+}
+
+.dropdownItems:hover {
+	
+	background-color: azure;
+	font-size: 125%;
+
+}
+
+.show {
+	
+	display: block;
+
+}
