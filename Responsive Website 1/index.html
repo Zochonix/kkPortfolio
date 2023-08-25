@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/graphics/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<title>Home - KK</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/graphics/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/graphics/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/graphics/favicon/favicon-16x16.png">
+<link rel="manifest" href="/graphics/favicon/site.webmanifest">
+<link rel="shortcut icon" href="/graphics/favicon/favicon.ico">
+<link rel = "stylesheet" href = "css/core-colours.css">
+<link rel = "stylesheet" href = "css/core-font.css">
+<link rel = "stylesheet" href = "css/core-positioning.css">
+<script src = "js/handleScroll.js"></script>
+<script src = "js/modalControl.js"></script>
+<script src = "js/settingsControl.js"></script>
+
+</head>
+
+<body>
+
+<section id = "settingsModal" class = "modal">
+
+    <h2 id = "settingsTitle">Settings</h2>
+
+    <h3 class = "settingsSectionTitle">Accessibility</h3>
+
+    <table id = "AccessSettingControls" class = "settingTable">
+        <tr>
+            <td class = "settingTextValue">Available Soon.</td>
+        </tr>
+    </table>
+
+    <h3 class = "settingsSectionTitle">User Interface</h3>
+
+    <table id = "UISettingControls" class = "settingTable">
+
+        <colgroup>
+
+            <col>
+            <col id = "buttonControls">
+
+        </colgroup>
+
+        <tr>
+
+            <td class = "settingTextValue">Enable/Disable ScrollToTop Button</td>
+
+            <td>
+
+                <section id = "scrollButtons">
+
+                    <button id = "enableScrollButton" class = "scrollToTopControl" type = "button" disabled>Enable</button>
+
+                    <button id = "disableScrollButton" class = "scrollToTopControl">Disable</button>
+
+                </section>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <h3 class = "settingsSectionTitle">Language</h3>
+
+    <table id = "LanguageSettingControls" class = "settingTable">
+        <tr>
+            <td class = "settingTextValue">Available Soon.</td>
+        </tr>
+    </table>
+
+    <button id = "closeSettings">Exit</button>
+
+</section>
+
+<header>
+
+<section id = "maintenanceSection">
+
+    <button id = "openSettings">#</button>
+
+    <p id = "maintenanceRecord">Current Build: v0.5 @ 29/03/23</p>
+
+</section>
+
+<section id = "title">
+
+    <h1>Kane</h1>
+
+    <h1>Kennedy</h1>
+
+</section>
+
+<section id = "introButtons">
+
+    <button id = "skipToStoryButton">About Me</button>
+
+    <button id = "skipToProfileButton">View Profile</button>
+
+</section>
+
+<p id = "emailText">Email: <i><strong>kanek1104@gmail.com</strong></i></p>
+
+</header>
+
+<aside id = "returnButton">
+
+    <p id = "returnButtonText"><<</p>
+
+</aside>
+
+<main>
+
+<h2 id = "storyTitle">About Me</h2>
+
+<p class = "introductionText">Since graduating from university, I've been on the hunt for a position where I'm able to make use of my skills in programming and website development. I'm able to create programs in multiple languages for specific purposes when needed and can design and query databases. I also like to make graphics with Illustrator and Photoshop from time to time, as well as play "music" on the guitar. I'm making steady progress with that last one.</p>
+
+<p class = "introductionText" id = "middle">For further information, you can look at my projects a bit further down this page.</p>
+
+<p class = "introductionText">So, perhaps you need a spare hand to help develop a new website or someone who can design and test fuctions for that new application you're making? If so, please send me an email using the address specified above. Thank you!</p>
+
+<!--<img of me!>-->
+
+<img id = "mainEndDivider" src = "graphics/strokeDivider.svg">
+
+</main>
+
+<footer>
+
+<h2 id = "footerTitle">My Projects</h2>
+
+<p id = "summaryIntro">Here you will be able to see a quick profile of my technical skills and view information about some of the projects I have done throughout the past few years.</p>
+
+<table id = "currentStatistics">
+
+    <colgroup>
+        <col id = "currentStatColumn1">
+        <col id = "currentStatColumn2">
+    </colgroup>
+
+    <tr>
+        <td class = "currentStatHeading paddingOn" id = "languagesKnown_statistic">Languages Known<br>(In Order of Proficiency)</td>
+        <td class = "currentStatValue paddingOn" id = "languagesKnown_values">Java, C, HTML, CSS, PHP, VB.Net, Python, JavaScript, MatLab</td>
+    </tr>
+
+    <tr>
+        <td class = "currentStatHeading paddingOn">Time Spent with Most Proficient Language<br>(Java)</td>
+        <td class = "currentStatValue paddingOn" id = "mostProficient_value">3 Years</td>
+    </tr>
+
+    <tr>
+        <td class = "currentStatHeading paddingOn">Other Skills</td>
+        <td class = "currentStatValue paddingOn">
+            <ul id = "skillList">
+                <li id = "topItem">Graphic Design using Adobe Illustrator and Photoshop.</li>
+                <li id = "bottomItem">Database creation & amendment with scripts.</li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td class = "paddingOn" id = "lastCurrentStatHeading">Currently Looking For</td>
+        <td class = "paddingOn" id = "lastCurrentStatValue">Junior Role in Website Development</td>
+    </tr>
+
+</table>
+
+<button id = "dropdownButton"">Select Project</button>
+
+</footer>
+
+<aside id = "overlayEffect"></aside>
+
+<section id = "selectionModal" class = "modal">
+
+    <section id = "titleSection">
+
+        <h2 id = "selectionTitle">Project Selection</h2>
+
+        <h3 id = "close">x</h3>
+
+    </section>
+
+    <form action = "#" id = "projectSelectionForm">
+
+        <section id = "selectionArea">
+
+            <label for = "projects" id = "projectsLabel">Select a Project:</label>
+
+            <select name = "projects" id = "projectSelectionBox">
+
+                <option value = "2019_2dgame">University (2019) - 2D Game</option>
+                <option value = "2022_app">University (2022) - React Native App</option>
+
+            </select>
+
+        </section>
+        
+        <input id = "submitButton" type = "submit" value = "Submit">
+
+    </form>
+    
+</section>
+
+<section id = "projectInformationModal" class = "modal">
+
+    <h2 id = "projectTitle">Placeholder</h2>
+
+    <button id = "return"><<</button>
+
+    <p id = "synopsisText">Placeholder</p>
+
+    <table id = "projectInfoTable">
+
+        <colgroup>
+            <col id = "projectInfoStatistics">
+            <col id = "projectInfoValues">
+        </colgroup>
+
+        <tr>
+            <td>Language Used</td>
+            <td id = "languagesUsed">Placeholder</td>
+        </tr>
+
+        <tr>
+            <td>Time Taken</td>
+            <td id = "timeTaken">Placeholder</td>
+        </tr>
+
+        <tr>
+            <td>Reason for Development</td>
+            <td id = "reasonDev">Placeholder</td>
+        </tr>
+        
+    </table>
+
+    <button id = "githubLink"><a id = "link" href = "https://github.com/Zochonix/kkWebProjects" target = "_blank">View on GitHub</a></button>
+    
+</section>
+
+</body>

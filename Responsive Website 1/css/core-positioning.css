@@ -1,0 +1,1368 @@
+/*
+
+	"core-positioning.css"
+
+	Created by Kane Kennedy.
+	Last modified on the 29th of March 2023.
+
+	Hello! These are the CSS rules that determine the positions for each element on my website.
+
+	To provide responsive functionality, each set of rules for an element is contained within a media query. These media queries provide the correct rules (styles) for a target platform.
+
+*/
+
+* {
+
+	margin: 0;
+	overflow: auto;
+
+}
+
+@keyframes fancyFade {
+
+	from {
+		
+		opacity: 0;
+	
+	}
+	
+	to {
+		
+		opacity: 1
+	
+	}
+
+}
+
+header > *, main > *, footer > *:not(#dropdownButton), #returnButton {
+
+	animation-name: fancyFade;
+	animation-duration: 1s;
+
+}
+
+#link {
+	
+	text-decoration: none;
+	color: whitesmoke;
+
+}
+
+/* Portrait Mobile Phones - CSS Rules */
+@media only screen and (max-width: 600px) {
+
+	.modal {
+
+		display: none;
+		position: fixed;
+		border-radius: 10px;
+		z-index: 2;
+
+	}
+
+	#settingsModal {
+
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		bottom: 100%;
+		border-radius: 0;
+
+	}
+
+	#settingsTitle {
+
+		width: 95%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		margin-right: auto;
+		text-align: left;
+
+	}
+
+	.settingsSectionTitle {
+
+		width: 95%;
+		margin-top: 1vh;
+		margin-left: 10px;
+		margin-right: auto;
+		text-align: left;
+		
+
+	}
+
+	.settingTable {
+
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	button {
+
+		display: block;
+		width: 120px;
+		height: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: 2.5px solid;
+		border-radius: 2.5px;
+		text-align: center;
+		padding: 5px 10px;
+
+	}
+
+	#buttonControls {
+
+		width: 40%;
+
+	}
+
+	#scrollButtons {
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+
+	}
+
+	.scrollToTopControl {
+
+		width: 15vw;
+		min-width: 60px;
+
+	}
+
+	#closeSettings {
+
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		margin-left: 10px;
+		margin-bottom: 10px;
+
+	}
+
+	header {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+
+	}
+
+	#maintenanceSection {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		margin-top: 5px;
+
+	}
+
+	#openSettings {
+
+		width: 35px;
+		height: 35px;
+		margin: 0;
+		margin-left: 5px;
+
+	}
+
+	#maintenanceRecord {
+
+		margin: 0;
+		margin-right: 5px;
+		
+	}
+
+	#title {
+
+		margin-bottom: 1vh;
+
+	}
+
+	#introButtons {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 1vh;
+
+	}
+
+	#skipToStoryButton {
+
+		margin-right: 1vh;
+
+	}
+
+	#skipToProfileButton {
+
+		margin-left: 1vh;
+
+	}
+
+	#emailText {
+
+		position: absolute;
+		bottom: 20%;
+
+	}
+
+	#returnButton {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 45px;
+		height: 45px;
+		position: fixed;
+		bottom: 5px;
+		right: 5px;
+		margin-bottom: 0px;
+		border: none;
+		border-radius: 100%;
+		transform: rotate(90deg);
+
+	}
+
+	#returnButtonText {
+
+		margin: 0;
+
+	}
+
+	main {
+
+		height: 100%;
+
+	}
+
+	h2 {
+
+		width: 100%;
+		text-align: center;
+
+	}
+
+	#storyTitle {
+
+		margin-top: 2vh;
+		margin-bottom: 2.5vh;
+
+	}
+
+	p {
+
+		margin-top: 1vh;
+		margin-bottom: 1vh;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	.introductionText {
+
+		width: 95%;
+
+	}
+
+	#mainEndDivider {
+
+		display: block;
+		width: 33%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 4.5vh;
+		margin-bottom: 3.5vh;
+
+	}
+
+	footer {
+		
+		height: 100%;
+	
+	}
+
+	#footerTitle {
+		
+		margin-top: 2vh;
+		margin-bottom: 2.5vh;
+	
+	}
+
+	#summaryIntro {
+
+		width: 95%;
+
+	}
+
+	#currentStatistics {
+
+		width: 90%; 
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2vh;
+		margin-bottom: 2.5vh;
+		border-collapse: collapse;
+		text-align: left;
+		padding: 10px 10px;
+
+	}
+
+	/* Table Borders - Start*/
+
+	#currentStatColumn1 {
+
+		border-right: 1px solid;
+
+	}
+
+	.currentStatHeading {
+
+		border-bottom: 1px solid;
+
+	}
+
+	.currentStatValue {
+
+		border-bottom: 1px solid;
+
+	}
+
+	/* Table Borders - End*/
+
+	.paddingOn {
+
+		padding: 1rem;
+
+	}
+
+	#languagesKnown_statistic {
+
+		width: 50%;
+
+	}
+
+	#mostProficient_value {
+
+		text-align: center;
+
+	}
+
+	ul {
+
+		padding: 0;
+
+	}
+
+	ul li {
+
+		margin-left: 1rem;
+		text-align: left;
+		overflow: visible;
+
+	}
+
+	#topItem {
+
+		margin-top: 2.5px;
+		margin-bottom: 5px;
+
+	}
+
+	#bottomItem {
+
+		margin-top: 5px;
+		margin-bottom: 2.5px;
+
+	}
+
+	#overlayEffect {
+
+		display: none;
+		width: 100%; 
+		height: 100%;
+		position: fixed; 
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		
+
+	}
+
+	#selectionModal {
+
+		width: 300px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+
+	#titleSection {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10px;
+		width: 100%;
+
+	}
+
+	#close {
+
+		position: absolute;
+		right: 10px;
+		margin-bottom: calc(0.6rem + 1vw);
+
+	}
+
+	#projectSelectionForm {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: max-content;
+		margin-top: 25px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	#selectionArea {
+
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 25px; 	
+
+	}
+
+	#projectsLabel {
+
+		margin-bottom: 1%;
+
+	}
+
+	#projectSelectionBox {
+
+		margin-top: 1%;
+
+	}
+
+	#submitButton {
+
+		width: 40%;
+		height: 30px;
+		border-radius: 5px;
+
+	}
+
+	#projectInformationModal {
+
+		width: 300px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+
+	#projectTitle {
+
+		width: 75%;
+		text-align: left;
+		margin-top: 10px;
+		margin-left: 10px;
+
+	}
+
+	#return {
+
+		width: 10%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-right: 0;
+		margin-left: 0;
+		margin-top: 0;
+		border: none;
+		padding: 0;
+
+	}
+
+	#synopsisText {
+
+		width: 90%;
+		margin-left: 10px;
+
+	}
+
+	#projectInfoTable {
+
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		border-collapse: collapse;
+
+	}
+
+	.paddingOff {
+
+		padding: 0;
+
+	}
+
+	#githubLink {
+
+		margin-left: 10px;
+
+	}
+
+}
+
+/* 2. Upwards from 600px. */
+@media only screen and (min-width: 600px) {
+
+	.modal {
+
+		display: none;
+		position: fixed;
+		border-radius: 10px;
+		z-index: 2;
+
+	}
+
+	#settingsModal {
+
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		bottom: 100%;
+		border-radius: 0;
+
+	}
+
+	#settingsTitle {
+
+		width: 95%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		margin-right: auto;
+		text-align: left;
+
+	}
+
+	.settingsSectionTitle {
+
+		width: 95%;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: auto;
+		text-align: left;
+		
+
+	}
+
+	.settingTable {
+
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	button {
+
+		display: block;
+		width: 120px;
+		height: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: 2.5px solid;
+		border-radius: 2.5px;
+		text-align: center;
+		padding: 5px 10px;
+
+	}
+
+	#buttonControls {
+
+		width: 50%;
+
+	}
+
+	#scrollButtons {
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+
+	}
+
+	.scrollToTopControl {
+
+		width: 100px;
+		margin: 0;
+
+	}
+
+	#closeSettings {
+
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		margin-left: 10px;
+		margin-bottom: 10px;
+
+	}
+
+	header {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+
+	}
+
+	#maintenanceSection {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		margin-top: 5px;
+
+	}
+
+	#openSettings {
+
+		width: 35px;
+		height: 35px;
+		margin: 0;
+		margin-left: 5px;
+
+	}
+
+	#maintenanceRecord {
+
+		margin: 0;
+		margin-right: 5px;
+		
+	}
+
+	#title {
+
+		margin-bottom: 5px;
+
+	}
+
+	#introButtons {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 5px;
+
+	}
+
+	#skipToStoryButton {
+
+		margin-right: 1vw;
+
+	}
+
+	#skipToProfileButton {
+
+		margin-left: 1vw;
+
+	}
+
+	#emailText {
+
+		position: absolute;
+		bottom: 20%;
+
+	}
+
+	#returnButton {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 45px;
+		height: 45px;
+		position: fixed;
+		bottom: 5px;
+		right: 5px;
+		margin-bottom: 0px;
+		border: none;
+		border-radius: 100%;
+		transform: rotate(90deg);
+
+	}
+
+	#returnButtonText {
+
+		margin: 0;
+
+	}
+
+	main {
+
+		height: 100%;
+
+	}
+
+	h2 {
+
+		width: 100%;
+		text-align: center;
+
+	}
+
+	#storyTitle {
+
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+
+	}
+
+	p {
+
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	.introductionText {
+
+		width: 95%;
+
+	}
+
+	#mainEndDivider {
+
+		display: block;
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 4vh;
+		margin-bottom: 3vh;
+
+	}
+
+	footer {
+		
+		height: 100%;
+	
+	}
+
+	#footerTitle {
+		
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+	
+	}
+
+	#summaryIntro {
+
+		width: 95%;
+
+	}
+
+	#currentStatistics {
+
+		width: 90%; 
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+		border-collapse: collapse;
+
+	}
+
+	/* Table Borders - Start*/
+
+	#currentStatColumn1 {
+
+		border-right: 1px solid;
+
+	}
+
+	.currentStatHeading {
+
+		border-bottom: 1px solid;
+
+	}
+
+	.currentStatValue {
+
+		border-bottom: 1px solid;
+
+	}
+
+	/* Table Borders - End*/
+
+	.paddingOn {
+
+		padding: 1rem;
+
+	}
+
+	#languagesKnown_statistic {
+
+		width: 50%;
+
+	}
+
+	#mostProficient_value {
+
+		text-align: center;
+
+	}
+
+	ul {
+
+		padding: 0;
+
+	}
+
+	ul li {
+
+		margin-left: 1rem;
+		text-align: left;
+		overflow: visible;
+
+	}
+
+	#topItem {
+
+		margin-top: 2.5px;
+		margin-bottom: 5px;
+
+	}
+
+	#bottomItem {
+
+		margin-top: 5px;
+		margin-bottom: 2.5px;
+
+	}
+
+	#overlayEffect {
+
+		display: none;
+		width: 100%; 
+		height: 100%;
+		position: fixed; 
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+
+	}
+
+	#selectionModal {
+
+		width: 300px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+
+	#titleSection {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10px;
+		width: 100%;
+
+	}
+
+	#close {
+
+		position: absolute;
+		right: 10px;
+		margin-bottom: calc(0.5rem + 1vw);
+
+	}
+
+	#projectSelectionForm {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: max-content;
+		margin-top: 25px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	#selectionArea {
+
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 25px; 	
+
+	}
+
+	#projectsLabel {
+
+		margin-bottom: 1%;
+
+	}
+
+	#projectSelectionBox {
+
+		margin-top: 1%;
+
+	}
+
+	#submitButton {
+
+		width: 40%;
+		height: 30px;
+		border-radius: 5px;
+
+	}
+
+	#projectInformationModal {
+
+		width: 400px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+
+	#projectTitle {
+
+		width: 75%;
+		text-align: left;
+		margin-top: 10px;
+		margin-left: 10px;
+
+	}
+
+	#return {
+
+		width: 10%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-right: 0;
+		margin-left: 0;
+		margin-top: 0;
+		border: none;
+		padding: 0;
+
+	}
+
+	#synopsisText {
+
+		width: 90%;
+		margin-left: 10px;
+
+	}
+
+	#projectInfoTable {
+
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		border-collapse: collapse;
+
+	}
+
+	.paddingOff {
+
+		padding: 0;
+
+	}
+
+	#githubLink {
+
+		margin-left: 10px;
+
+	}
+
+}
+
+/* 3. Up to 992px. */
+@media only screen and (min-width: 768px) {
+
+	#buttonControls {
+
+		width: 33%;
+
+	}
+
+	#mainEndDivider {
+
+		width: 20%;
+
+	}
+
+	#currentStatistics {
+
+		width: 66%;
+
+	}
+
+	#selectionModal {
+
+		width: 384px;
+
+	}
+
+	#close {
+
+		margin-bottom: calc(0.25rem + 1vw);
+
+	}
+
+	#submitButton {
+
+		width: 40%;
+
+	}
+
+	#projectInformationModal {
+
+		width: 484px;
+
+	}
+
+}
+
+/* 4. Up to 1200px. */
+@media only screen and (min-width: 992px) {
+
+	#buttonControls {
+
+		width: 25%;
+
+	}
+
+	h2 {
+
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+
+	}
+
+	#mainEndDivider {
+
+		width: 15%;
+
+	}
+
+	#selectionTitle {
+
+		width: 100%;
+		text-align: center;
+
+	}
+
+}
+
+/* 5. Up to high resolution devices. */
+@media only screen and (min-width: 1200px) {
+
+	/*
+	
+	Button Hover FX
+
+	I've decided to only places these FX, only on devices with desktop-level pixels, hence the introduction of this tag in this specific media query.
+
+	*/
+
+	@keyframes buttonBounce {
+
+		0% {
+
+			transform: translateY(0);
+
+		}
+
+		50% {
+
+			transform: translateY(-5px);
+			
+		}
+
+		100% {
+
+			transform: translateY(0);
+			
+		}
+
+	}
+
+	button:hover {
+
+		cursor: pointer;
+		animation-name: buttonBounce;
+  		animation-duration: 0.33s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease;
+
+	}
+
+	#returnButton:hover, #submitButton:hover, #close:hover {
+
+		cursor: pointer;
+
+	}
+
+	#close:hover, #openSettings:hover, .scrollToTopControl:hover, #closeSettings:hover {
+
+		animation: none;
+
+	}
+
+	#buttonControls {
+
+		width: 15%;
+
+	}
+
+	.scrollToTopControl {
+
+		width: 75px;
+
+	}
+
+	h2 {
+
+		width: 60%;
+
+	}
+
+	.introductionText {
+
+		width: 60%;
+
+	}
+
+	#summaryIntro {
+
+		width: 60%;
+
+	}
+
+	#currentStatistics {
+
+		margin-top: 4vh;
+		margin-bottom: 4vh;
+		width: 50%;
+
+	}
+
+	#mainEndDivider {
+
+		width: 12.5%;
+
+	}
+
+}
+
+/* 6. Up to 4K resolution devices. */
+@media only screen and (min-width: 1920px) {
+
+	#skipToStoryButton {
+
+		margin-right: 0.75vw;
+
+	}
+
+	#skipToProfileButton {
+
+		margin-left: 0.75vw;
+
+	}
+
+	h2 {
+
+		width: 45%;
+
+	}
+
+	.introductionText {
+
+		width: 45%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+
+	}
+
+	#mainEndDivider {
+
+		width: 7.5%;
+		margin-top: 50px;
+		margin-bottom: 25px;
+
+	}
+
+	#summaryIntro {
+
+		width: 45%;
+
+	}
+
+	#currentStatistics {
+
+		width: 45%;
+
+	}
+
+} 
+
+/* Configure Halfway. */
+@media only screen and (min-width: 2880px) {
+
+	#skipToStoryButton {
+
+		margin-right: 0.25vw;
+
+	}
+
+	#skipToProfileButton {
+
+		margin-left: 0.25vw;
+
+	}
+
+	#returnButton {
+
+		width: 50px;
+		height: 50px;
+
+	}
+
+	h2 {
+
+		width: 40%;
+
+	}
+
+	.introductionText {
+
+		width: 40%;
+		margin-top: 35px;
+		margin-bottom: 35px;
+
+	}
+
+	#mainEndDivider {
+
+		width: 7.5%;
+		margin-top: 80px;
+		margin-bottom: 25px;
+
+	}
+
+	#summaryIntro {
+
+		width: 40%;
+		margin-bottom: 25px;
+
+	}
+
+	#currentStatistics {
+
+		width: 40%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+
+	}
+
+	#close {
+
+		margin-bottom: calc(0.3rem + 0.3vw);
+
+	}
+
+}
+
+/* 8. 4K and beyond! */
+@media only screen and (min-width: 3840px) {
+
+	/*4K stuff*/
+
+} 
+
+/* 9. Landscape Mobile Phones (Are a pain.)*/
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+
+	.introductionText {
+
+		margin-top: 4vh;
+		margin-bottom: 4vh;
+
+	}
+
+	#mainEndDivider {
+
+		margin-top: 8vh;
+
+	}
+
+	#summaryIntro {
+
+		margin-top: 4vh;
+		width: 90%;
+
+	}
+
+	#currentStatistics {
+
+		margin-top: 4vh;
+		margin-bottom: 4vh;
+
+	}
+
+}

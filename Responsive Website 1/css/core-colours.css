@@ -1,0 +1,151 @@
+/*
+
+	"core-colours.css"
+
+	Created by Kane Kennedy.
+	Last modified on the 29th of March 2023.
+
+	Hello! These are the CSS rules that provide the colours for each element on my website.
+
+	There is a main theme for the design of the website, centering on the use of orange, blue and black/grey. There is no reason in particular for this except that I think it looks cool.
+
+*/
+
+/* Entire Website Background */
+
+body {
+
+	background-color: rgba(255, 255, 255, 1.0); /* White */
+	
+}
+
+.modal {
+
+	background-color: rgba(46, 46, 46, 1.0); /* Modal Grey */
+	opacity: 0%;
+
+}
+
+.settingTextValue {
+
+	color: rgba(255, 255, 255, 1.0);
+
+}
+
+#enableScrollButton {
+
+	background-color: rgba(169, 169, 169, 1.0);
+
+}
+
+/* First Section Background */
+
+header {
+
+	background-color: rgba(242, 103, 57, 1.0); /* Orange */
+	box-shadow: 5px 0px 100px -80px black inset,
+				-5px 0px 100px -80px black inset;
+
+}
+
+/* Title */
+
+h1 {
+
+	color: rgba(255, 255, 255, 1.0); /* White */
+
+}
+
+/* Default Button Colour */
+
+button {
+
+	background-color: transparent;
+	color: rgba(255, 255, 255, 1.0);
+
+}
+
+#returnButton {
+
+	background-color: rgba(255, 255, 255, 1.0);
+	opacity: 100%;
+
+}
+
+#returnButtonText {
+
+	color: rgb(242, 103, 57);
+
+}
+
+/* Second Section Background (Main Content) */
+
+main {
+
+	background-color: rgb(65, 64, 66); /* Gray */
+	box-shadow: 5px 0px 100px -80px black inset,
+				-5px 0px 100px -80px black inset;
+
+}
+
+/* Main, Footer and Chapter Title Colour. */
+
+h2 {
+
+	color: rgba(255, 255, 255, 1.0); /* White */
+
+}
+
+/* Font Colour */
+
+p {
+
+	color: rgba(255, 255, 255, 1.0); /* White */
+
+}
+
+/* Statistics Header Colour */
+
+h3 {
+
+	color: rgba(255, 255, 255, 1.0); /* White */
+
+}
+
+/* Final Section Colour */
+
+footer {
+
+	background-color: rgb(55, 103, 177); /* Light Blue */
+	box-shadow: 5px 0px 100px -80px black inset,
+				-5px 0px 100px -80px black inset;
+
+}
+
+/* Profile Table Colour */
+
+#currentStatistics {
+
+	color: rgba(255, 255, 255, 1.0);
+
+}
+
+#overlayEffect {
+
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0%;
+
+}
+
+#submitButton {
+
+	background-color: transparent;
+	border: 2px solid rgb(255, 235, 205);
+
+}
+
+#projectInfoTable {
+
+	color: rgb(255, 255, 255);
+
+}

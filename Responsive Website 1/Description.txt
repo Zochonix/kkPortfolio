@@ -1,0 +1,5 @@
+The files included in this folder make up my former portfolio website.
+
+It uses a responsive design using media queries and a simple, colour scheme.
+
+No outside packages were used, this is all vanilla.

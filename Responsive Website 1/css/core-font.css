@@ -1,0 +1,360 @@
+/*
+
+	"core-font.css"
+
+	Created by Kane Kennedy.
+	Last modified on the 29th of March 2023.
+
+	Hello! These are the CSS rules that provide fonts and font sizes for each text element on my website.
+
+	Each of these fonts are web safe.
+
+*/
+
+/* Fonts */
+
+h1, h2, h3 {
+
+	font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+p, td, th, label, input {
+
+	font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+
+}
+
+.captionText {
+
+	font-family: Tahoma, serif;
+
+}
+
+/* Font Sizing */
+
+/* 1. For Mobile Phones. Up to 600px. */
+@media only screen and (max-width: 600px) {
+
+	html {
+
+		font-size: 16px;
+	
+	}
+
+	h2 {
+
+		font-size: calc(0.75rem + 1vw);
+
+	}
+
+	h3 {
+
+		font-size: calc(0.6rem + 1vw);
+
+	}
+
+	h1 {
+
+		font-size: calc(1rem + 1vw);
+
+	}
+
+	button, input {
+		
+		font-size: calc(0.4rem + 1vw);
+
+	}
+	
+	#returnButtonText {
+
+		font-size: calc(0.8rem + 1vw);
+
+	}
+
+	p, td {
+
+		font-size: calc(0.5rem + 1vw);
+
+	}
+
+	label {
+
+		font-size: calc(0.45rem + 1vw);
+
+	}
+
+}
+
+/* 2. Upwards from 600px. */
+@media only screen and (min-width: 600px) {
+
+	/* Base font styling for ALL elements. */
+	
+	html {
+
+		font-size: 16px;
+	
+	}
+
+	/* h2 includes the following:
+	
+		#settingsTitle,
+		#storyTitle,
+		#footerTitle,
+		#selectionTitle
+
+	*/
+
+	h2 {
+
+		font-size: calc(0.7rem + 1vw);
+
+	}
+
+	/* h3 includes the following:
+	
+		.settingsSectionTitle (Titles for sub-menus in the settings menu),
+		#close (The close button for the project selection modal),
+
+	*/
+
+	h3 {
+
+		font-size: calc(0.5rem + 1vw);
+
+	}
+
+	/* h1 styles the title elements for the website. */
+
+	h1 {
+
+		font-size: calc(1rem + 1vw);
+
+	}
+
+	button, input {
+		
+		font-size: calc(0.3rem + 1vw);
+
+	}
+
+	p, td {
+
+		font-size: calc(0.4rem + 1vw);
+
+	}
+
+	label {
+
+		font-size: calc(0.45rem + 1vw);
+
+	}
+
+}
+
+/* 3. Up to 992px. */
+@media only screen and (min-width: 768px) {
+
+	#returnButtonText {
+
+		font-size: calc(0.4rem + 1vw);
+
+	}
+
+	h3 {
+
+		font-size: calc(0.4rem + 1vw);
+
+	}
+
+	p, td {
+
+		font-size: calc(0.2rem + 1vw);
+
+	}
+
+	button, input {
+		
+		font-size: calc(0.2rem + 1vw);
+
+	}
+
+	label, #close {
+
+		font-size: calc(0.25rem + 1vw);
+
+	}
+
+}
+
+/* 4. Up to 1200px. */
+@media only screen and (min-width: 992px) {
+
+	p, td {
+
+		font-size: calc(0.1rem + 1vw);
+
+	}
+
+	button {
+
+		font-size: calc(0.1rem + 1vw);
+
+	}
+
+	input {
+
+		font-size: calc(0.05rem + 1vw)
+
+	}
+
+}
+
+/* 5. Up to high-resolution devices. */
+@media only screen and (min-width: 1200px) {
+
+	button {
+
+		font-size: calc(0.1rem + 0.6vw);
+
+	}
+
+	#returnButtonText {
+
+		font-size: calc(0.4rem + 0.8vw);
+
+	}
+
+	h2 {
+
+		font-size: calc(0.5rem + 0.8vw);
+
+	}
+
+	h3 {
+
+		font-size: calc(0.25rem + 0.8vw);
+
+	}
+
+	p, td {
+
+		font-size: calc(0.1rem + 0.8vw);
+
+	}
+
+	label, #close {
+
+		font-size: calc(0.5rem + 0.5vw);
+
+	}
+
+	input {
+
+		font-size: calc(0.4rem + 0.4vw)
+
+	}
+
+}
+
+/* 6. Up to 4K resolution devices. */
+@media only screen and (min-width: 1920px) {
+
+	button {
+
+		font-size: calc(0.1rem + 0.4vw);
+
+	}
+
+	#returnButtonText {
+
+		font-size: calc(0.4rem + 0.6vw);
+
+	}
+
+	h2 {
+
+		font-size: calc(0.5rem + 0.6vw);
+
+	}
+
+	h3 {
+
+		font-size: calc(0.25rem + 0.6vw);
+
+	}
+
+	p, td {
+
+		font-size: calc(0.1rem + 0.55vw);
+
+	}
+
+	label, #close {
+
+		font-size: calc(0.4rem + 0.4vw);
+
+	}
+
+	input {
+
+		font-size: calc(0.3rem + 0.3vw)
+
+	}
+
+}
+
+/* Configure Halfway. */
+@media only screen and (min-width: 2880px) {
+
+	button {
+
+		font-size: calc(0.05rem + 0.35vw);
+
+	}
+
+	#returnButtonText {
+
+		font-size: calc(0.5rem + 0.5vw);
+
+	}
+
+	h2 {
+
+		font-size: calc(0.5rem + 0.5vw);
+
+	}
+
+	h3 {
+
+		font-size: calc(0.25rem + 0.25vw);
+
+	}
+
+	p, td {
+
+		font-size: calc(0.1rem + 0.45vw);
+
+	}
+
+	label, #close {
+
+		font-size: calc(0.3rem + 0.3vw);
+
+	}
+
+	input {
+
+		font-size: calc(0.25rem + 0.25vw)
+
+	}
+
+}
+
+/* 8. 4K and beyond! */
+@media only screen and (min-width: 3840px) {
+
+	/* No rules yet*/
+
+} 
