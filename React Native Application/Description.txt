@@ -1,0 +1,3 @@
+This folder contains files and wireframes for a front-end application interface. This interface would be used for the "Spacebook" social media platform.
+
+The application was developed using the react native framework and its purpose was to establish communication with a database using a back-end RESTful API and perform certain operations as needed.
