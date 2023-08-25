@@ -1,0 +1,3 @@
+This folder contains the files for the 2D game that I created during University.
+
+Initially it was created using Processing however it has since been converted into "actual" Java code with minor differences.
